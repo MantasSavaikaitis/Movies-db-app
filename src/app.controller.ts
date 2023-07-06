@@ -16,9 +16,9 @@ export class AppController {
     //
   }
 
-  @Get(':id')
-  findOne(@Param('id') id) {
-    console.log('controler id ===', id);
-    return this.appService.getUser(Number(id));
+  @Get()
+  findOne(@Body() bodyObj) {
+    console.log('controler ===', bodyObj.email);
+    return this.appService.getUser(bodyObj.email);
   }
 }

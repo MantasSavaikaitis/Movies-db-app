@@ -3,10 +3,10 @@ import { User, UserProps } from 'classes/user';
 
 @Injectable()
 export class AppService {
-  async getUser(id: number) {
+  async getUser(email: string) {
     try {
-      console.log('service id ===', id);
-      const user = await new User({ id: id }).getUser();
+      console.log('service id ===');
+      const user = await new User({ email: email }).getUser();
       return user;
     } catch (error) {
       console.log('error ===', error);

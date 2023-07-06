@@ -5,3 +5,4 @@
 # See the documentation for all the connection string options: https://www.prisma.io/docs/concepts/database-connectors/mysql
 
 DATABASE_URL=""
+MOVIE_API_KEY="7b837b6dd1msh1a353e48e899dd4p15d98ejsn15d5e05f68d9"
